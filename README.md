@@ -31,4 +31,29 @@ Ambos modelos utilizan TF-IDF para representar los textos numéricamente. Se com
 - `datos/datos_ini/`: dataset original.
 - `datos/datos_limp/`: dataset limpio.
 - `fuentes/entrena.ipynb`: notebook con el desarrollo del proyecto.
-- `fuentes/datos_prep.py`: funciones para preparar y
+- `fuentes/datos_prep.py`: funciones para preparar y limpiar los datos.
+- `fuentes/train.py`: entrenamiento, evaluación y registro de experimentos.
+- `CHANGELOG.md`: historial de cambios del proyecto.
+
+## Herramientas utilizadas
+
+- Python
+- Pandas y NumPy
+- Scikit-learn
+- Matplotlib y Seaborn
+- Hugging Face Datasets
+- MLflow
+- Google Colab
+
+## Ejecución del proyecto
+
+1. Instalar las dependencias necesarias.
+2. Revisar el dataset original y ejecutar las funciones de preparación.
+3. Entrenar los modelos y evaluar sus resultados.
+4. Consultar en MLflow los parámetros, métricas y modelos registrados.
+
+El notebook `fuentes/entrena.ipynb` contiene el desarrollo paso a paso. El script `fuentes/train.py` permite ejecutar el entrenamiento desde el entorno donde se encuentre el repositorio y estén instaladas las dependencias necesarias.
+
+## Limitaciones
+
+El dataset utilizado es sintético y puede contener mensajes con estructuras o expresiones similares. Por ello, los resultados obtenidos pueden ser mejores que los que se alcanzarían con mensajes reales de clientes. Es necesario evaluar los modelos con datos reales antes de utilizarlos en un entorno de trabajo.
